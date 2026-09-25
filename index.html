@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en" data-theme="print">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Robert Jacob Ryan</title>
+  <meta name="description" content="Robert Jacob Ryan, software engineer. Shipped products, research, and things built in Athens and San Francisco.">
+  <meta name="theme-color" content="#F2ECE1">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Sans:opsz,wght@9..40,400..700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <script type="module" crossorigin src="/assets/index-DhFWj3si.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DPVHVFnk.css">
+</head>
+<body>
+  <canvas id="stage" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <svg class="speedlines" aria-hidden="true" viewBox="-50 -50 100 100" preserveAspectRatio="xMidYMid slice"></svg>
+
+  <header class="hud">
+    <a class="hud-mark" href="#top">RJR</a>
+    <nav class="hud-nav" aria-label="Sections">
+      <a href="#work" data-for="work">Work</a>
+      <a href="#research" data-for="research">Research</a>
+      <a href="#flight" data-for="flight">Flight</a>
+      <a href="#hackathons" data-for="hackathons">Hackathons</a>
+    </nav>
+    <div class="hud-right">
+      <a class="hud-cv" href="/Robert_Ryan_Resume.pdf" download>Résumé <span aria-hidden="true">↓</span></a>
+    </div>
+  </header>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <main>
+    <!-- 00 · Hero: a two-colour riso print; the particles are the ink -->
+    <section id="top" class="sec hero" data-scene="hero" data-theme="print">
+      <div class="hero-sticky">
+        <div class="hero-inner">
+          <h1 class="hero-name">Robert Jacob Ryan</h1>
+          <p class="hero-lede">I'm 18. In summer 2026 I moved to San Francisco and shipped production software full-time at a telehealth startup. Now I'm finishing the IB in Athens.</p>
+          <p class="hero-links"><a class="btn" href="#work">See the work</a><a class="btn btn-ghost" href="https://github.com/TheActualJacob">GitHub</a></p>
+        </div>
+        <div class="press" aria-hidden="true">
+          <span class="crop c-tl"></span><span class="crop c-tr"></span><span class="crop c-bl"></span><span class="crop c-br"></span>
+        </div>
+        <p class="hero-cap"><span><span class="n-particles">102,400</span> particles, simulated on your GPU. <span class="cap-do">Click anywhere to scatter them.</span></span><span class="swatches" aria-hidden="true"><i></i><i></i><i></i><i></i></span></p>
+      </div>
+    </section>
+
+    <!-- 01 · Work: numbers first, loud -->
+    <section id="work" class="sec work-intro" data-scene="work" data-theme="sun">
+      <div class="wi-sticky">
+        <p class="eyebrow">01 · Work &amp; shipped products</p>
+        <div class="slam">
+          <div class="slam-item"><span class="num" data-count="273">273</span><span class="lbl">pull requests merged</span></div>
+          <div class="slam-item"><span class="num" data-count="10">10</span><span class="lbl">weeks</span></div>
+          <div class="slam-item"><span class="num" data-count="9">9</span><span class="lbl">systems shipped to production</span></div>
+          <div class="slam-item"><span class="num" data-count="50">50</span><span class="lbl">production database migrations</span></div>
+        </div>
+        <div class="wi-card comic">
+          <h2 class="skew">Headquarters Health</h2>
+          <p class="meta">Software engineer · Jun 2026 – present · San Francisco</p>
+          <p>A virtual concussion clinic. I joined full-time in June and shipped nine systems to production in ten weeks. Here are five of them.</p>
+          <p class="used"><span class="used-lbl">Used by</span> <span class="sticker s-clin">real clinicians</span> <span class="sticker s-pat">real patients</span> <span class="sticker s-par">10,000+ parents</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01 · Work: the reel scrolls sideways -->
+    <section id="reel" class="sec reel" data-scene="work" data-theme="sun" aria-label="Five systems I shipped at Headquarters Health">
+      <div class="reel-pin">
+        <div class="reel-track">
+          <article class="panel">
+            <div class="panel-card comic">
+              <p class="panel-no">01 / 05</p>
+              <h3>Telehealth video platform</h3>
+              <p>Replaced Google Meet with our own Amazon Chime stack, then built charting into the call. The chart note sits inside the visit, and AI drafts it from the live transcript. Patients can withdraw transcription consent mid-call.</p>
+              <p class="tags">Amazon Chime SDK · Next.js · live transcription</p>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel-card comic">
+              <p class="panel-no">02 / 05</p>
+              <h3>Camera eye tests</h3>
+              <p>Saccade and smooth-pursuit tests that run on a webcam, with MediaPipe gaze analysis in an AWS Lambda. I left pursuit gain out of the score after an evidence review showed it couldn't separate concussed patients from controls.</p>
+              <p class="tags">MediaPipe · AWS Lambda · Python</p>
+              <p class="aside-note">The eye is watching your cursor. Stop moving and it switches to a pursuit test.</p>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel-card comic">
+              <p class="panel-no">03 / 05</p>
+              <h3>Parent app</h3>
+              <p>Built from nothing in my first two weeks, so parents can follow a child's recovery, message the care team, and carry their coverage card in Apple Wallet.</p>
+              <p class="tags">Mobile web · Apple Wallet</p>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel-card comic">
+              <p class="panel-no">04 / 05</p>
+              <h3>Insurance portal, in one day</h3>
+              <p>Shipped on August 20: sign-in, a three-step application with autosave, a priced quote, e-signature and a staff review queue.</p>
+              <p class="tags">Amazon Location · PDF generation · e-signature</p>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel-card comic">
+              <p class="panel-no">05 / 05</p>
+              <h3>A team of AI employees</h3>
+              <p>Grew one autonomous AI employee into a team of four, on a harness I designed around headless Claude Code. They do go-to-market work and open their own pull requests; I review and merge them.</p>
+              <p class="tags">Claude Code · Slack · model failover</p>
+              <p class="aside-note">How they work is the next section down.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01 · Work: the AI employees, pinned, four beats (night shift) -->
+    <section id="fleet" class="sec fleet" data-scene="fleet" data-theme="fleet" aria-labelledby="fleet-title">
+      <div class="ae-pin">
+        <p class="eyebrow ae-eyebrow">01 · Work · The AI employees</p>
+
+        <article class="ae-beat ae-b1">
+          <p class="panel-no">From one to four</p>
+          <h2 id="fleet-title">A team of AI employees</h2>
+          <p>I grew one autonomous AI employee into a team of four. Each runs on its own Mac, with its own Slack channel, mailbox and Claude account. They do go-to-market work, the first on veterans outreach and the second on health-system sales, and three contracts are now in progress toward signing.</p>
+        </article>
+
+        <article class="ae-beat ae-b2">
+          <p class="panel-no">One continuous mind</p>
+          <h3>A harness around Claude Code</h3>
+          <p>Each employee is a single headless Claude Code session. My harness pins it and resumes it for every Slack message, email, scheduled wake and heartbeat. The off-the-shelf product it replaced had split one agent into 126 sessions.</p>
+          <p>Its memory is a pyramid, inspired by OpenClaw:</p>
+          <ol class="ae-tiers">
+            <li><span><b>Distillation</b> promotes lasting directives on its own</span></li>
+            <li><span><b>Versioned trimming</b></span></li>
+            <li><span><b>A structure-aware seed</b></span></li>
+          </ol>
+          <p class="ae-small">The employees wrote much of the harness themselves. One of them built the memory pyramid and the interrupt model, in pull requests I reviewed.</p>
+        </article>
+
+        <article class="ae-beat ae-b3">
+          <p class="panel-no">How a message moves</p>
+          <h3>Inputs in, nothing out by default</h3>
+          <div class="hx">
+            <ul class="hx-in" aria-label="Inputs">
+              <li>Slack</li><li>Email</li><li>Calendar</li><li>Scheduled wakes</li>
+            </ul>
+            <span class="hx-flow f1" aria-hidden="true"></span>
+            <div class="hx-core"><b>One pinned Claude Code session</b><span>per employee, resumed for every input</span></div>
+            <span class="hx-flow f2" aria-hidden="true"></span>
+            <div class="hx-out">
+              <div class="hx-box hx-models"><b>Models</b><span class="chips"><i>Opus</i><i>GLM</i><i>Gemini</i></span><span>fail over, same session</span></div>
+              <div class="hx-box hx-gate"><b>Egress gate</b><span class="gate-icon" aria-hidden="true"></span><span>opens on human approval</span></div>
+            </div>
+            <div class="hx-box hx-panel"><b>Advisory panel</b><span class="chips"><i>GLM</i><i>GPT</i><i>Gemini</i></span><span>advises, never decides</span></div>
+          </div>
+          <p>If a model provider goes down, the session fails over to another without losing its place. Before critical actions, models from other families weigh in, but only the main model decides.</p>
+        </article>
+
+        <article class="ae-beat ae-b4">
+          <p class="panel-no">Scale, with the brakes on</p>
+          <div class="ae-tiles">
+            <div class="ae-tile t-out"><span class="big">Tens of thousands</span><span class="lbl">personalized cold outreach messages, sent behind email verification, a daily cap, a banned-phrase guard and human approval</span></div>
+            <div class="ae-tile t-prs"><span class="big"><span class="count" data-count="101">101</span></span><span class="lbl">pull requests in their own codebase, almost all written by the employees; <span class="count" data-count="87">87</span> merged after my review</span></div>
+            <div class="ae-tile t-macs"><span class="big"><span class="count" data-count="1">1</span> command</span><span class="lbl">sets up a new employee on a fresh Mac, with outbound traffic blocked until it's allowed</span></div>
+            <div class="ae-tile t-sync"><span class="big"><span class="count" data-count="15">15</span> min</span><span class="lbl">between syncs: every Mac pulls the latest harness from main, so one merge reaches the whole team</span></div>
+          </div>
+          <p class="ae-small">One of them added a daily Five Whys reflection to the harness.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 01 · Work: another job, and things I built myself -->
+    <section id="work-more" class="sec more" data-scene="work" data-theme="sun">
+      <h2 class="more-title skew">Another job, and things I built on my own</h2>
+      <div class="more-grid">
+        <article class="more-card c-job comic">
+          <p class="panel-no">AI Systems Engineer · Mar – May 2026</p>
+          <h3>entirefeed.com</h3>
+          <p>Low-latency generative video pipelines, tuned for inference throughput and GPU utilization, plus neural speech synthesis for voice cloning. I also trained a vision-transformer model to predict TikTok views.</p>
+        </article>
+        <article class="more-card c-informed comic">
+          <p class="panel-no">Founder · iOS</p>
+          <h3>Informed</h3>
+          <p>An app that fact-checks short-form video. I built and launched it myself; a few hundred people use it.</p>
+          <p class="links"><a class="btn" href="https://informed-app.com">informed-app.com ↗</a><a class="btn btn-ghost" href="https://apps.apple.com/us/app/informed-ai-fact-checker/id6759923252">App Store ↗</a></p>
+        </article>
+        <article class="more-card c-turbo comic">
+          <p class="panel-no">Co-founder · web</p>
+          <h3>TurboEdit</h3>
+          <p>A web-based agentic video editor.</p>
+          <p class="links"><a class="btn" href="https://turboedit.ai">turboedit.ai ↗</a></p>
+        </article>
+        <article class="more-card c-nlsh comic">
+          <p class="panel-no">Rust · on-device</p>
+          <h3>nlsh</h3>
+          <p>A natural-language shell: plain English in, shell commands out, running fully on-device through Apple Foundation Models. No cloud round-trip.</p>
+        </article>
+        <article class="more-card c-nnv comic">
+          <p class="panel-no">Web · 3D</p>
+          <h3>Neural Net Visualizer</h3>
+          <p>An interactive site for exploring neural network architectures in 3D.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 02 · Research: calm, paper -->
+    <section id="research" class="sec research" data-scene="paper" data-theme="paper">
+      <p class="eyebrow r-eyebrow">02 · Research</p>
+
+      <article class="peregrine">
+        <div class="pg-copy">
+          <p class="meta">Independent · July 2026</p>
+          <h2 class="r-title">PeregrineX: adversarial safety testing of a neural flight controller</h2>
+          <p>I built a safety-qualification harness and flew a paired 800-flight adversarial campaign against <code>mc_nn_control</code>, the TensorFlow Lite neural position controller in PX4-Autopilot mainline, and its classical counterpart. Pass/fail rates matched (27.0% vs 24.5%). How they failed did not.</p>
+          <p>A Gaussian-process-guided search then mapped the safety boundary more sample-efficiently than uniform sampling, validated across three surrogate model families on a 2,000-run ArduPilot baseline.</p>
+        </div>
+        <dl class="pg-stats">
+          <div><dd><span class="count" data-count="800">800</span></dd><dt>paired adversarial flights</dt></div>
+          <div><dd><span class="count" data-count="94">94</span>%</dd><dt>of the neural controller's crashes lost lateral position control. The classical stack: 0%.</dt></div>
+          <div><dd>3.6–4.7×</dd><dt>more sample-efficient at mapping the safety boundary</dt></div>
+        </dl>
+      </article>
+
+      <div class="r-grid">
+        <div class="r-copy">
+          <h2 class="r-title">Conformal prediction as a risk input for Kelly sizing</h2>
+          <p class="meta">Independent · arXiv preprint, Aug 2026 · submitted to ICAIF '26</p>
+          <p class="r-link"><a class="paper-link" href="https://arxiv.org/abs/2608.01494">Read the preprint: <cite>Conformal Kelly</cite>, arXiv:2608.01494 ↗</a></p>
+          <div class="step" data-step="1"><h3>Forecast</h3><p>Ridge regression predicts 21-day ETF returns.</p></div>
+          <div class="step" data-step="2"><h3>Interval</h3><p>Split-conformal prediction wraps each forecast in an interval, calibrated on held-out residuals.</p></div>
+          <div class="step" data-step="3"><h3>Size</h3><p>The interval's width becomes the uncertainty in a fractional-Kelly position. The backtests include trading costs, execution lag and leverage limits. Try the slider.</p></div>
+          <div class="step" data-step="4"><h3>The question underneath</h3><p>Can a method give better intervals and still make worse bets?</p></div>
+        </div>
+        <div class="r-chart">
+          <div class="chart-sticky">
+            <svg id="chart" viewBox="0 0 600 440" role="img" aria-label="Illustration: a return forecast with a conformal prediction interval that widens over the forecast horizon, and Kelly position sizes that shrink as the interval widens." data-stage="0"></svg>
+            <div class="r-control">
+              <label for="bw">Interval width</label>
+              <input id="bw" type="range" min="0.6" max="2" step="0.01" value="1">
+              <output id="bw-out" for="bw">1.00×</output>
+            </div>
+            <p class="chart-note">Illustration of the sizing rule, not results from the paper.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="r-notes">
+        <article class="note">
+          <h3>Concussions in Plain Sight</h3>
+          <p class="meta">MIT Sloan Sports Analytics Conference 2027 submission</p>
+          <p>A pre-registered event study over 17 NFL seasons, with a sealed 2024–25 holdout, that finds unreported concussions in public play-by-play data. 23% of concussed quarterbacks finished the game, and their play fell by 0.33 EPA per dropback after the hit compared with players who were hit but not diagnosed (p &lt; 0.001).</p>
+        </article>
+        <article class="note">
+          <h3>NC State University</h3>
+          <p class="meta">Computer vision research assistant · Jan – May 2026</p>
+          <p>Designed a dual-branch CNN, a pretrained ResNet18 fused with custom thermal-input layers, to detect stress in pigs in a working livestock facility: 97% validation accuracy on noisy thermal imagery. Contributing to a paper in progress.</p>
+        </article>
+        <article class="note">
+          <h3>Center for Heterodox Economics, University of Tulsa</h3>
+          <p class="meta">Volunteer</p>
+          <p>Sought out the statistics my homeschool co-op didn't teach. A professor mentored me in Bayesian modeling.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 03 · Flight: playful sky -->
+    <section id="flight" class="sec flight" data-scene="flight" data-theme="sky">
+      <header class="fl-head">
+        <p class="eyebrow">03 · Drone club &amp; CanSat</p>
+        <h2 class="skew">Autonomous Flight Captain</h2>
+        <p class="meta">ACS Athens · Aerial Drone Competition club, then CanSat</p>
+      </header>
+      <ol class="waypoints">
+        <li class="wp wp-l"><span class="wp-id">WP-01</span><p>Led our club's autonomous flight mission.</p></li>
+        <li class="wp wp-r"><span class="wp-id">WP-02</span><p>Wrote the flight programs.</p></li>
+        <li class="wp wp-l"><span class="wp-id">WP-03</span><p>Won the Coding Award at the aerial drone competition.</p></li>
+        <li class="wp wp-r"><span class="wp-id">WP-04</span><p>Senior year: promoted to CanSat, where the whole satellite has to fit inside a soda can.</p></li>
+      </ol>
+    </section>
+
+    <!-- 04 · Hackathons: the loudest part -->
+    <section id="hackathons" class="sec arcade" data-scene="arcade" data-theme="arcade">
+      <div class="ar-pin">
+        <div class="ar-top">
+          <div>
+            <p class="eyebrow">04 · Hackathons</p>
+            <p class="ar-also">Also selected for Y Combinator Startup School 2026</p>
+          </div>
+          <p class="clock" id="clock" aria-hidden="true">12:00:00</p>
+        </div>
+        <div class="prizes">
+          <article class="prize">
+            <p class="stamp">1st</p>
+            <h3>Zero-Human Company Hackathon</h3>
+            <p class="meta">Terac · San Francisco · Aug 2026 · $3,000 prize</p>
+            <p>Twelve hours to build an agent that runs a business with little or no human input. I built an AI property manager.</p>
+          </article>
+          <article class="prize">
+            <p class="stamp">2nd</p>
+            <h3>Cursor hackathon</h3>
+          </article>
+          <article class="prize">
+            <p class="stamp">Finalist</p>
+            <h3>Qualcomm × Meta ExecuTorch Hackathon</h3>
+            <p class="meta">San Francisco · Jun 2026 · 30 teams, by application</p>
+            <p>On-device AI on Snapdragon phones.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Before all that: quiet -->
+    <section id="before" class="sec cafe" data-scene="cafe" data-theme="cafe">
+      <article class="cafe-card">
+        <p class="eyebrow">Before all that</p>
+        <h2>Pho Good Time</h2>
+        <p class="meta">Barista &amp; host · summer 2025</p>
+        <p>Made coffee and boba, ran the front of house, and taught myself computer science the same summer.</p>
+      </article>
+    </section>
+
+    <!-- Colophon: back to the print -->
+    <section id="colophon" class="sec colophon" data-scene="hero" data-theme="print">
+      <div class="co-inner">
+        <p class="co-label">Email</p>
+        <a class="co-mail" href="mailto:jacobrryan1@gmail.com">jacobrryan1@gmail.com</a>
+        <p class="co-cta"><a class="btn" href="/Robert_Ryan_Resume.pdf" download>Download résumé (PDF)</a><a class="btn btn-ghost" href="https://github.com/TheActualJacob">GitHub</a></p>
+        <p class="co-note">About this site: <span class="n-particles">102,400</span> particles simulated on the GPU, a custom cel shader with halftone dots, and a halftone wipe between scenes. Built with Three.js, GLSL, GSAP and Lenis.</p>
+      </div>
+      <footer class="foot">Robert Jacob Ryan · 2026</footer>
+    </section>
+  </main>
+
+</body>
+</html>

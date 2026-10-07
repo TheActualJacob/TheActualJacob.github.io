@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Sans:opsz,wght@9..40,400..700&family=JetBrains+Mono:wght@400;500&display=swap">
-  <script type="module" crossorigin src="/assets/index-CkDqDI6H.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DOtNyk7A.css">
+  <script type="module" crossorigin src="/assets/index-DJ51eiWp.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DaFrCaxY.css">
 </head>
 <body>
   <canvas id="stage" aria-hidden="true"></canvas>
@@ -211,24 +211,11 @@
     <section id="research" class="sec research" data-scene="paper" data-theme="paper">
       <p class="eyebrow r-eyebrow">02 · Research</p>
 
-      <article class="peregrine">
-        <div class="pg-copy">
-          <p class="meta">Independent · July 2026</p>
-          <h2 class="r-title">PeregrineX: adversarial safety testing of a neural flight controller</h2>
-          <p>I built a safety-qualification harness and flew a paired 800-flight adversarial campaign against <code>mc_nn_control</code>, the TensorFlow Lite neural position controller in PX4-Autopilot mainline, and its classical counterpart. Pass/fail rates matched (27.0% vs 24.5%). How they failed did not.</p>
-          <p>A Gaussian-process-guided search then mapped the safety boundary more sample-efficiently than uniform sampling, validated across three surrogate model families on a 2,000-run ArduPilot baseline.</p>
-        </div>
-        <dl class="pg-stats">
-          <div><dd><span class="count" data-count="800">800</span></dd><dt>paired adversarial flights</dt></div>
-          <div><dd><span class="count" data-count="94">94</span>%</dd><dt>of the neural controller's crashes lost lateral position control. The classical stack: 0%.</dt></div>
-          <div><dd>3.6–4.7×</dd><dt>more sample-efficient at mapping the safety boundary</dt></div>
-        </dl>
-      </article>
-
       <div class="r-grid">
         <div class="r-copy">
           <h2 class="r-title"><a class="r-title-link" href="https://arxiv.org/abs/2608.01494">Conformal prediction as a risk input for Kelly sizing</a></h2>
-          <p class="meta">Independent · arXiv preprint, Aug 2026 · submitted to ICAIF '26</p>
+          <p class="accepted">Accepted · ACM ICAIF '26, Milan</p>
+          <p class="meta">Sole author · Main conference · arXiv preprint, Aug 2026</p>
           <p class="r-link"><a class="paper-btn" href="https://arxiv.org/abs/2608.01494">Read the paper on arXiv <span aria-hidden="true">↗</span></a><span class="paper-id"><cite>Conformal Kelly</cite> · arXiv:2608.01494</span></p>
           <div class="step" data-step="1"><h3>Forecast</h3><p>Ridge regression predicts 21-day ETF returns.</p></div>
           <div class="step" data-step="2"><h3>Interval</h3><p>Split-conformal prediction wraps each forecast in an interval, calibrated on held-out residuals.</p></div>
